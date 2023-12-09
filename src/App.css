@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  padding: 40px 200px;
+  gap: 40px;
+}
+button{
+  cursor: pointer;
+}
+.header-div{
+  border-radius: 10px;
+  background-color: lightblue;
+  margin-top: 40px;
+  padding: 30px;
+}
+.body-div{
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  margin-top: 30px;
+}
+
+.body-div > div{
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  padding: 40px;
+  cursor: pointer;
+}
+.body-div > div > img{
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 100%;
+}
+.body-div > div > div p:first-child{
+  font-size: 16px;
+}
+.body-div > div > div p:last-child{
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.footer-div{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 40px;
+}
+.footer-div > div{
+  border: 1px solid;
+  border-radius: 10px;
+  height: 400px;
+  width: 40%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-div > div > button{
+  padding: 7px 10px;
+  background-color: blue;
+  border: none;
+  color: #fff;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.footer-div > div > input{
+  margin-top: -10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid gray;
+}
+.footer-header{
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px 200px 5px 20px;
+}
