@@ -1,7 +1,9 @@
 import React from "react";
 import { useContext } from "react";
 import { UserContext } from "../UserContext";
-
+import { TbMoneybag } from "react-icons/tb";
+import { FaArrowDown } from "react-icons/fa";
+import { FaArrowUp } from "react-icons/fa";
 function Index() {
     const data = useContext(UserContext)
   return (
@@ -19,7 +21,7 @@ function Index() {
 
       <div className="body-div">
         <div style={{ backgroundColor: "yellowgreen" }}>
-          <img src="" alt="" />
+          <TbMoneybag style={{fontSize: "45px", border: "2px solid", borderRadius:"100%", color: "white", padding: "5px 5px"} }/>
           <div>
             <p>Your Balance</p>
             <br />
@@ -30,7 +32,7 @@ function Index() {
         </div>
 
         <div style={{ backgroundColor: "lightblue" }}>
-          <img src="" alt="" />
+          <FaArrowDown style={{fontSize: "45px", border: "2px solid", borderRadius:"100%", color: "white", padding: "5px 5px"} }/>
           <div>
             <p>Your Income</p>
             <br />
@@ -41,7 +43,7 @@ function Index() {
         </div>
 
         <div style={{ backgroundColor: "blueviolet" }}>
-          <img src="" alt="" />
+          <FaArrowUp style={{fontSize: "45px", border: "2px solid", borderRadius:"100%", color: "white", padding: "5px 5px"} }/>
           <div>
             <p>Your Expense</p>
             <br />
@@ -70,7 +72,7 @@ function Index() {
           <label htmlFor="">Type</label>
           <br />
           <select style={{ padding: "5px 10px", borderRadius: "5px" }}>
-            <option>Income</option>
+            <option >Income</option>
             <option>Expense</option>
           </select><br />
 
