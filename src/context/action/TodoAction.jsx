@@ -4,4 +4,5 @@ export const AddTodo = (textTitle, textAmount, textType,  dispatch) => {
 
 export const onDelete = (id, dispatch) => {
     dispatch({type: 'DELETE', id})
-}
+} 
+

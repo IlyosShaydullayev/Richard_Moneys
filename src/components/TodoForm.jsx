@@ -7,14 +7,13 @@ function TodoForm() {
   const [textTitle, setTextTitle] = useState('')
   const [textAmount, setTextAmount] = useState('')
   const [type, setType] = useState('Income')
-  console.log(type);
   
   const handleClick = (e) => {
     e.preventDefault()
-    AddTodo(textTitle, textAmount, type, dispatch)
+    textAmount.trim().length > 0 && AddTodo(textTitle, textAmount, type, dispatch)
     setTextTitle('')
     setTextAmount('')
-    setType('')
+    setType('Income')
   }
 
   return (
@@ -34,7 +33,7 @@ function TodoForm() {
 
         <label htmlFor="">Type</label>
         <br />
-        <select style={{ padding: "5px 10px", borderRadius: "5px" }} onChange={(e) => setType(e.target.value)} defaultValue={type}>
+        <select style={{ padding: "5px 10px", borderRadius: "5px" }} onChange={(e) => setType(e.target.value)} value={type}>
           <option type="Income">Income</option>
           <option type="Expense">Expense</option>
         </select>
